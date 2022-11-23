@@ -1,0 +1,499 @@
+
+
+/* NOTES
+Colors:
+    yellow: #ffbe00
+    navy: #192837
+Fonts: 
+*/
+
+/* --------- UNIVERSAL RESET ----------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    padding: 0;
+    
+}
+
+img {
+    max-width: 100%;
+}
+/* use scroll behaviour on landing pages with id nav */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ----------------------------- UNIVERSAL STYLES AND CLASSES  ------------------------------- */
+
+
+/* ---------- PADDING UTILITY CLASSES---------- */
+
+.padded-sm { padding: 2.5%; }
+.padded    { padding: 5%;   }
+.padded-lg { padding: 10%;  }
+
+.padded-05 { padding: 0.5rem; }
+.padded-1  { padding: 1rem; }
+.padded-2  { padding: 2rem; }
+
+.padded-t  { padding-top: 5%; }
+.padded-b  { padding-bottom: 5%; }
+.padded-l  { padding-left: 5%; }
+.padded-r  { padding-right: 5%; }
+
+.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr  { padding-left: 5%; padding-right: 5%; }
+
+.padded-t-1 { padding-top: 1rem; }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem; }
+.padded-r-1 { padding-right: 1rem; }
+
+.padded-t-2 { padding-top: 2rem; }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem; }
+.padded-r-2 { padding-right: 2rem; }
+
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0; }
+.padded-r-0 { padding-right: 0; }
+
+/* ---------- MARGIN UTILITY CLASSES---------- */
+
+.margin-t { margin-top: 5%; }
+.margin-b { margin-bottom: 5%; }
+.margin-l { margin-left: 5%; }
+.margin-r { margin-right: 5%; }
+
+.margin-t-1 { margin-top: 1rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
+
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+
+.margin-t-0 { margin-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0; }
+.margin-r-0 { margin-right: 0; }
+
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+
+
+/*------------------ MIN HEIGHT CLASSES----------------- */
+
+
+.tall-50        {min-height: 50vh;}
+.tall-60        {min-height: 60vh;}
+.tall-70        {min-height: 70vh;}
+.tall-80        {min-height: 80vh;}
+.tall-90        {min-height: 90vh;}
+.tall-100       {min-height: 100vh;}
+
+/* ---------- BACKGROUND AND IMAGES STYLES ---------- */
+
+.bg-dark { 
+    background-color: #192837;
+    color: white;
+}
+
+.bg-featured { 
+    background-color: #ffbe00;
+
+}
+
+.bg-light { 
+    background-color: #E3ECF2;
+
+}
+
+
+.bg-image {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(240,240,240);
+    background-position: center;
+
+}
+
+/* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
+
+.landscape     { padding-bottom: 66%;  }
+.portrait-tall { padding-bottom: 175%; }
+.portrait      { padding-bottom: 125%; }
+.square        { padding-bottom: 100%; }
+
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+
+
+/*------------------ TYPOGRAPHY STYLES ----------------- */
+
+body {
+    font-family: 'catamaran', sans-serif;
+    color:#192837;
+}
+
+h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+h2 { font-size: 2.5rem;}
+h3 { font-size: 1.5rem;}
+h4 { font-size: 1.2rem;}
+
+p {
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+	margin-bottom: 0;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid
+}
+
+a:hover {
+    color:#ffbe00;
+}
+
+
+
+.text-light            {font-weight: 200;}
+.text-normal           {font-weight: 400;}
+.text-bold             {font-weight: 800;}
+
+.text-left                     {text-align: left;}
+.centered                   {text-align: center;}
+.text-right                    {text-align: right;}
+
+.text-featured                 {color: #ffbe00;}
+.text-white                    {color: white;}
+
+.text-small                   {font-size: 1.5rem;}
+.text-medium                  {font-size: 2rem;}
+.text-big                     {font-size: 4.5rem;}
+
+.subtitle       {
+    font-size: 1.2rem;
+    color: rgb(120, 120, 125);
+     }
+
+
+/* ----------------- HEADER/NAV STYLES ------------------- */
+header {
+    padding: 1% 5%;
+     }
+
+.emphasis-button {
+     border: 2px solid;
+     margin-left: 0.5rem;
+      }
+
+
+/* ----------------- MOBILE MENU STYLES ------------------- */
+
+.mobile-menu {
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* text-align: center; */
+  }
+  
+  .mobile-menu a {
+    text-decoration: none;
+    padding: 5%;
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .hamburger-button {
+    padding: 1rem;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 2.5em;
+    line-height: 0.5;
+    margin-top: -0.4rem;
+    position: relative;
+  /*  right and top determine where it is fixed - match to header padding. Top is higher to account for negative margin on symbol  */
+    right: 1rem;
+    top: 0.9rem;
+  /* z-index allows hamburger icon to be seen when mobile menu shows   */
+    z-index: 2;
+  }
+
+  .hamburger-button i {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  
+
+  .hamburger-button.active {
+    color: white;
+  }
+
+ 
+
+
+/*------------------ HEADER AND FOOTER STYLES-------------- */
+
+header {
+    padding: 2% 5%;
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+    /* border: 1px solid grey; */
+    display: inline-block;
+    border-bottom: none;
+    
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+
+
+.logo h2 {
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+
+footer a {
+    border:none;
+}
+
+/*------------------ BANNER STYLES ------------------------*/
+
+.banner {
+    background-color: rgb(235,235,235);
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+  }
+
+
+/* .banner h3 {
+    font-size: 5.5rem;
+    line-height: 1;
+} */
+
+
+
+/* ---------- BACKGROUND IMAGES  ---------- */
+
+.bg-crane       {background-image: url(images/west-oz-cranes-white-crane.jpg)}
+
+
+/* 
+.bg-image-pillow    {
+    background-image: url(images/the-sleep-co-yellow.jpg);
+    background-position: 50% 50%;
+}
+.bg-image-dog {
+    background-image: url(images/the-sleep-co-dog.jpg);
+    background-position: 50% 35%;
+} */
+
+
+
+
+
+/*---------------------- FONT AWESOME ICONS  ---------------------------*/
+
+/* .fa-solid {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+} */
+
+/*---------------------- BUTTONS AND FORMS ---------------------------*/
+.button {
+    text-decoration: none;
+    border-bottom: none;
+    border: 2px solid;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+/* use the below if a:hover is set to same color as background */
+.bg-featured .button:hover {
+    color:#d5b6a3;
+}
+
+input,
+textarea {
+    width: 100%;
+    display: block;
+    font-family: inherit;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    border: 2 px solid transparent;
+    
+}
+
+/* the below sets the border when user is clicked into each area */
+input:focus,
+textarea:focus {
+    border: 2px solid #ffbe00;
+    outline: none;
+}
+
+.form-button {
+    padding: 0.5rem 2rem;
+    background-color: #ffbe00;
+    appearance: none;
+    /* appearnace none removes 3d old school button look */
+    color: inherit;
+    border: 2px solid #192837;
+    /* use border with same color as background so you can see border when hover active */
+}
+
+
+/*---------------------- TESTIMONIAL SECTION ---------------------------*/
+/* These are the quote icons */
+
+/* .quote-icon {
+    font-size: 6rem;
+    display: inline-block;
+    color: rgb(120, 120, 125);
+    line-height: 1;
+} */
+
+
+
+
+
+/*----------------GENERAL RESPONSIVE STYLES (apply everywhere unless overridden) ----------*/
+
+.show-xs,
+.show-sm,
+.show-md,
+.mobile-menu {
+    
+  display: none;
+}
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* MD media query - will activate at all devices less than 1024px/64em  - we use ems as that is what gridlex uses */
+
+@media(max-width:64em) {
+  .show-md {display: block;}
+  .hide-md {display: none;}
+
+  .md-tall-80 {min-height: 80vh;}
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* SM media query - will activate at all devices less than 768px/48em  - we use ems as that is what gridlex uses */
+
+@media(max-width:48em) {
+
+    /* by setting html font-size to 14 pixels we make all our font (which is set in rems - 1rem = 16 pixels) slightly smaller on smaller devices */
+  html {font-size:14px;}  
+
+  .show-sm {display: block;}
+  .hide-sm {display: none;}
+
+  .sm-text-center   { text-align: center; }
+  .sm-text-left     { text-align: left; }
+  .sm-text-right    { text-align: right; }
+
+  .sm-padded        { padding: 5%; }
+  .sm-padded-1      { padding: 1rem; }
+  .sm-padded-05     { padding: 0.5rem; }
+
+  .sm-padded-t-0    { padding-top: 0; }
+  .sm-padded-b-0    { padding-bottom: 0; }
+  .sm-padded-l-0    { padding-left: 0; }
+  .sm-padded-r-0    { padding-right: 0; }
+  
+  .sm-margin-t-0    { margin-top: 0; }
+  .sm-margin-b-0    { margin-bottom: 0; }
+  .sm-margin-l-0    { margin-left: 0; }
+  .sm-margin-r-0    { margin-right: 0; }
+
+/*   .logo h2          {font-size: 2rem;}
+
+  .banner h3         {font-size: 11vw;} */
+  }
+
+
+
+
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* XS media query - will activate at all devices less than 576px/36em  - we use ems as that is what gridlex uses */
+
+@media(max-width:36em) {
+   
+  .show-xs {display: block;}
+  .hide-xs {display: none;}
+
+  .xs-text-center   { text-align: center; }
+
+ h1 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    padding-top: 1rem;
+}
+}
+
+
+/* ------- XXS media query - will activate at all devices less than 400px/25em  - not a gridlex size so cannot change columns simply - use xxs stack to do this for sizes under 25em */
+
+@media(max-width:25em) {
+    .show-xxs {display: block;}
+    .hide-xxs {display: none;}
+  
+    [class*="grid"] .xxs-stack   { 
+        flex-basis: 100%; 
+        max-width: 100%;
+    }
+  
+   
+  }
+
+
+
+
+
